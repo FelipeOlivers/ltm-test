@@ -8,6 +8,7 @@ app.controller('listController', ['$scope', '$location', 'listService', function
             $scope.contatos = response.data;
         }).catch(function (err) {
             $scope.message = err.data.error_description;
+            $location.path('/login');
         });
 
 }]);
