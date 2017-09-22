@@ -127,7 +127,7 @@ executados juntos como segue imagem.</p>
  style='width:424.5pt;height:267pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="Roteiro_arquivos/image001.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img width=566 height=356
-src="Roteiro_arquivos/image002.jpg" v:shapes="Imagem_x0020_1"><![endif]></span></p>
+src="https://user-images.githubusercontent.com/868341/30758666-b05bab3e-9fa9-11e7-9e1a-5925a7ca3b28.png" v:shapes="Imagem_x0020_1"><![endif]></span></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
