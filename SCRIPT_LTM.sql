@@ -1,0 +1,49 @@
+IF db_id('Test') IS NULL 
+    CREATE DATABASE Test
+GO
+USE Test
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Telefones](
+	[Id_Telefone] [int] IDENTITY(1,1) NOT NULL,
+	[Nome] [varchar](50) NOT NULL,
+	[Telefone] [varchar](20) NOT NULL,
+ CONSTRAINT [PK_Telefones] PRIMARY KEY CLUSTERED 
+(
+	[Id_Telefone] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Usuarios](
+	[Id_Usuario] [int] IDENTITY(1,1) NOT NULL,
+	[Usuario] [varchar](20) NOT NULL,
+	[Senha] [varchar](150) NOT NULL,
+ CONSTRAINT [PK_Usuarios] PRIMARY KEY CLUSTERED 
+(
+	[Id_Usuario] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+
+INSERT INTO Usuarios (Usuario, Senha) values ('filipemiranda', 'zB8YnlmM6GS0Q5h9N7FJ+A==');
+INSERT INTO Telefones (Nome, Telefone) values ('Filipe', '99390-1000');
+INSERT INTO Telefones (Nome, Telefone) values ('Eduardo', '99390-1000');
+INSERT INTO Telefones (Nome, Telefone) values ('Rafael', '99390-1000');
+INSERT INTO Telefones (Nome, Telefone) values ('Andressa', '99390-1000');

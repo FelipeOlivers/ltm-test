@@ -1,0 +1,27 @@
+﻿<form class="form-login" role="form">
+    <h2 class="form-login-heading">Autenticação</h2>
+    <input type="text" class="form-control" placeholder="Usuário" data-ng-model="user" required autofocus>
+    <input type="password" class="form-control" placeholder="Senha" data-ng-model="pass" required>
+    <button class="btn btn-lg btn-info btn-block" type="submit" data-ng-click="login()">Logar</button>
+    <div data-ng-hide="message == ''" data-ng-class="(savedSuccessfully) ? 'alert alert-success' : 'alert alert-danger'">
+        {{message}}
+    </div>
+
+    <button class="btn btn-lg btn-info btn-block" type="submit" data-ng-click="testar()">Testar</button>
+    
+    <br /><br />
+    <p>
+        <span>Usuário: filipemiranda</span>
+        <br />
+        <span>Senha: filipemiranda</span>
+        <br />
+        <br />
+        <span>TOKEN:</span>
+        <br />
+        <span>{{ token }}</span>
+        <br />
+        <br />
+        <span>Expira em {{ expire }} segundos.</span>
+    </p>
+
+</form>
